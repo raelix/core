@@ -1432,6 +1432,9 @@ pybravia==0.3.4
 # homeassistant.components.cloudflare
 pycfdns==3.0.0
 
+# homeassistant.components.radoff
+pycognito==2024.5.1
+
 # homeassistant.components.comfoconnect
 pycomfoconnect==0.5.1
 

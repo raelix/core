@@ -1782,6 +1782,9 @@ pycmus==0.1.1
 # homeassistant.components.tensorflow
 # pycocotools==2.0.6
 
+# homeassistant.components.radoff
+pycognito==2024.5.1
+
 # homeassistant.components.comfoconnect
 pycomfoconnect==0.5.1
 
