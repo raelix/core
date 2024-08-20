@@ -115,7 +115,8 @@ class RadoffSensor(CoordinatorEntity, SensorEntity):
         """Return the state of the entity."""
         if self._normalize_fn is not None:
             return float(self._normalize_fn(self.device.sensors[self.sensor_key].value))
-        return int(self.device.sensors[self.sensor_key].value)
+        val = self.device.sensors[self.sensor_key].value
+        return int(val) if isinstance(val, int) else float(val)
 
     @property
     def native_unit_of_measurement(self) -> str | None:
